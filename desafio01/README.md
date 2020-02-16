@@ -2,7 +2,7 @@
 
 ## Instruções
 
-As instruções para este desafio podem ser encontradas em [Instrucões do Desafio](https://github.com/gabrieladslopes/GoStack/blob/master/desafio01/InstrucoesDesafio.md)
+As instruções para este desafio podem ser encontradas em [Instrucões do Desafio](https://github.com/gabrieladslopes/GoStack/blob/master/desafio01/IntrucoesDesafio.md)
 
 ## Setup
 
