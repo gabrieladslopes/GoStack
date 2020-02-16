@@ -3,7 +3,7 @@ const app = express();
 
 app.use(express.json());
 
-var projects = [];
+const projects = [];
 
 // Middlewares
 function checkIfProjectExists (req, res, next) {
@@ -62,7 +62,13 @@ app.delete('/projects/:id', checkIfProjectExists, (req, res) => {
 });
 
 app.post('/projects/:id/tasks', checkIfProjectExists, (req, res) => {
+  const { title } = req.body;
+  const { id } = req.params;
 
+  const project = projects.find(project => project.id == id);
+
+  project.tasks.push(title);
+  return res.json(project);
 });
 
 app.listen(3333);
