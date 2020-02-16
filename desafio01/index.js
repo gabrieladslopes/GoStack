@@ -5,6 +5,25 @@ app.use(express.json());
 
 var projects = [];
 
+// Middlewares
+function checkIfProjectExists (req, res, next) {
+  const { id } = req.params;
+  
+  if(!projects.find(project => project.id == id)) {
+    return res.status(400).json({ error: `Project with id ${id} not found` });
+  }
+
+  return next();
+}
+
+function logNumberOfRequests(req, res, next) {
+  console.count("Number of Requests");
+
+  return next();
+}
+
+app.use(logNumberOfRequests);
+
 // Routes
 app.post('/projects', (req, res) => {
   const { id, title } = req.body;
@@ -16,7 +35,7 @@ app.post('/projects', (req, res) => {
   }
 
   projects.push(project);
-  
+
   return res.json(project);
 });
 
@@ -24,15 +43,25 @@ app.get('/projects', (req, res) => {
   return res.json(projects);
 });
 
-app.put('/projects/:id', (req, res) => {
+app.put('/projects/:id', checkIfProjectExists, (req, res) => {
+  const { id } = req.params;
+  const { title } = req.body;
 
+  const project = projects.find(project => project.id == id);
+
+  project.title = title;
+  return res.json(project);
 });
 
-app.delete('/projects/:id', (req, res) => {
+app.delete('/projects/:id', checkIfProjectExists, (req, res) => {
+  const { id } = req.params;
+  const projectId = projects.findIndex(project => project.id == id);
 
+  projects.splice(projectId, 1);
+  return res.send();
 });
 
-app.post('/projects/:id/tasks', (req, res) => {
+app.post('/projects/:id/tasks', checkIfProjectExists, (req, res) => {
 
 });
 
