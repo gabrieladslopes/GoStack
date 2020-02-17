@@ -9,7 +9,7 @@
 
 ## About
 
-First challenge of the GoStack Bootcamp that consists of an application used to store projects and their tasks using [Express](https://expressjs.com/).
+First challenge of the [GoStack Bootcamp](https://rocketseat.com.br/gostack) that consists of an application used to store projects and their tasks using [Express](https://expressjs.com/).
 
 ## Instructions
 
@@ -30,8 +30,16 @@ The instructions for this challenge can be found at [Instructions](https://githu
 `yarn install`
 * Start the server:
 `node index.js`
-* Navigate to http://localhost:3333
+* Navigate to http://localhost:3333/
 
 ## Routes
 
+1. __GET__ /projects </br>http://localhost:3333/projects </br>Lists all the projects and their tasks
 
+2. __POST__ /projects </br>http://localhost:3333/projects<br/>Creates a new project </br>{ id: "1", title: "Title of the project" }
+
+3. __PUT__ /projects/:id </br>http://localhost:3333/projects/1</br>Updates the project with the given if (if it exists) </br>{ title: "New title of the project" }
+
+4. __DELETE__ /projects/:id </br>http://localhost:3333/projects/1</br>Deletes the project with the given id (if it exists)
+
+5. __POST__ /projects/:id/tasks </br>http://localhost:3333/projects/1/tasks</br>Creates a new task on the project with the given id (if is exists)</br>{ title: "New task" }
