@@ -13,7 +13,7 @@ First challenge of the GoStack Bootcamp that consists of an application used to 
 
 ## Instructions
 
-The instructions for this challenge can be found at [Instructions](https://github.com/gabrieladslopes/GoStack/blob/master/desafio01/ChallengeInstructions.md).
+The instructions for this challenge can be found at [Instructions](https://github.com/gabrieladslopes/GoStack/blob/master/challenge01/ChallengeInstructions.md).
 
 ## Setup
 
