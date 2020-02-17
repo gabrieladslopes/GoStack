@@ -9,7 +9,7 @@
 
 ## About
 
-First challenge of the [GoStack Bootcamp](https://rocketseat.com.br/gostack) that consists of an application used to store projects and their tasks using [Express](https://expressjs.com/).
+[GoStack Bootcamp's](https://rocketseat.com.br/gostack) first challenge consisting of an application used to store projects and their tasks. Developed using [Express](https://expressjs.com/).
 
 ## Instructions
 
