@@ -2,7 +2,7 @@
 
 <p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/gabrieladslopes/GoStack?color=%2304D361">
-  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/gabrieladslopes/GoStack">
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/gabrieladslopes/GoStack.svg">
   <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/gabrieladslopes/GoStack">
   <img alt="License" src="https://img.shields.io/badge/license-MIT-%2304D361">
 </p>
