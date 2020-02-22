@@ -38,7 +38,7 @@ The instructions for this challenge can be found at [Instructions](https://githu
 
 2. __POST__ /projects </br>http://localhost:3333/projects<br/>Creates a new project </br>{ id: "1", title: "Title of the project" }
 
-3. __PUT__ /projects/:id </br>http://localhost:3333/projects/1</br>Updates the project with the given if (if it exists) </br>{ title: "New title of the project" }
+3. __PUT__ /projects/:id </br>http://localhost:3333/projects/1</br>Updates the project with the given id (if it exists) </br>{ title: "New title of the project" }
 
 4. __DELETE__ /projects/:id </br>http://localhost:3333/projects/1</br>Deletes the project with the given id (if it exists)
 
