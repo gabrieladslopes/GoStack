@@ -22,6 +22,14 @@ The first part consists on the development of some basic functionalities.
 
 ## Setup
 
+- Install [Node.js](https://nodejs.org/en/)
+- Install [Yarn](https://yarnpkg.com/)
 
+## Technologies
+
+- Express
+- Nodemon + Sucrase
+- ESLint + Prettier + EditorConfig
+- Sequelize
 
 ## How to use
