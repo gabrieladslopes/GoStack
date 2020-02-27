@@ -17,7 +17,7 @@ The instructions for this challenge can be found at [Instructions](https://githu
 
 ## Setup
 
-* Install [NodeJS](https://nodejs.org/en/)
+* Install [Node.js](https://nodejs.org/en/)
 * Install [Yarn](https://yarnpkg.com/)
 
 ## How to use
